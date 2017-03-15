@@ -6,12 +6,10 @@ import { NgaModule } from '../theme/nga.module';
 
 import { Pages } from './pages.component';
 
-import { AuthGuard } from '../auth-guard.service.ts';
 
 @NgModule({
   imports: [CommonModule, NgaModule, routing],
   declarations: [Pages],
-  providers: [AuthGuard]
 })
 export class PagesModule {
 }

@@ -14,8 +14,6 @@ const routes: Routes = [
   {
     path: 'pages',
     component: Pages,
-    canActivate: [AuthGuard],
-    canActivateChild: [AuthGuard],
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'content-manager', loadChildren: () => System.import('./content/content.module')},
