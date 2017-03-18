@@ -26,7 +26,12 @@ const routes: Routes = [
       { path: 'ui', loadChildren: () => System.import('./ui/ui.module') },
       { path: 'forms', loadChildren: () => System.import('./forms/forms.module') },
       { path: 'tables', loadChildren: () => System.import('./tables/tables.module') },
-      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') }
+      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') },
+      { path: 'home', loadChildren: () => System.import('./home/home.module') },
+      { path: 'contact', loadChildren: () => System.import('./contact/contact.module') },
+      { path: 'portafolio', loadChildren: () => System.import('./portafolio/portafolio.module') },
+      { path: 'news', loadChildren: () => System.import('./news/news.module') },
+      { path: 'faq', loadChildren: () => System.import('./faq/faq.module') }
     ]
   }
 ];

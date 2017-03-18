@@ -336,6 +336,66 @@ export var PAGES_MENU = [
             target: '_blank'
           }
         }
+      },
+      {
+        path: 'home',
+        data: {
+          menu: {
+            title: 'Home',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'contact',
+        data: {
+          menu: {
+            title: 'Contact',
+            icon: 'ion-ios-location-outline',
+            selected: false,
+            expanded: false,
+            order: 1
+          }
+        }
+      },
+      {
+        path: 'portafolio',
+        data: {
+          menu: {
+            title: 'Portafolio',
+            icon: 'ion-document',
+            selected: false,
+            expanded: false,
+            order: 2
+          }
+        }
+      },
+      {
+        path: 'news',
+        data: {
+          menu: {
+            title: 'News',
+            icon: 'ion-stats-bars',
+            seleced: false,
+            expanded: false,
+            order: 3
+          }
+        }
+      },
+      {
+        path: 'faq',
+        data: {
+          menu: {
+            title: 'FAQ',
+            icon: 'ion-gear',
+            selected: false,
+            expanded: false,
+            order: 4
+          }
+        }
       }
     ]
   }
