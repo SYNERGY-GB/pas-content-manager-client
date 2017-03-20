@@ -6,4 +6,16 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
     selector: 'contact',
     template: require('./contact.html')
 })
-export class ContactComponent {}
+export class ContactComponent {
+    public direction: string;
+    public numbers: string[];
+    public title: string;
+
+    constructor(private fs: FirebaseService){
+        this.fs.db.ref('modules/contact').on('value',(snapshot) => {
+            this.direction = snapshot.direction;
+            this.numbers = snapshot.val().numbers;
+            this.title = snapshot.val().title;
+        });
+    }
+}
