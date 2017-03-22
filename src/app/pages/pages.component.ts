@@ -1,4 +1,14 @@
 import {Component, ViewEncapsulation} from '@angular/core';
+import { FirebaseService } from '../app-firebase.service'
+
+var config = {
+  apiKey: "AIzaSyDdcRi9L9bbmeJvZDzbPfgJTsyqY5b4f68",
+  authDomain: "pruebasynergy-c92f7.firebaseapp.com",
+  databaseURL: "https://pruebasynergy-c92f7.firebaseio.com",
+  storageBucket: "pruebasynergy-c92f7.appspot.com",
+  messagingSenderId: "785749975197"
+};
+
 
 @Component({
   selector: 'pages',
@@ -19,7 +29,8 @@ import {Component, ViewEncapsulation} from '@angular/core';
 })
 export class Pages {
   
-  constructor() {
+  constructor(private fs: FirebaseService) {
+    this.fs.initialize(config);
   }
 
   ngOnInit() {

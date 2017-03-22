@@ -1,19 +1,17 @@
-<div class="page-header">
-  <h1> {{ this.title }} </h1>
+<div *ngIf="this.myobj" class="page-header">
+  <h1> {{ myobj.title }} </h1>
 </div>
 <div class="panel panel-default">
-  <div class="panel-body">
-    {{ this.direction }}
+  <div *ngIf = "this.myobj" class="panel-body">
+    {{ myobj.direction }}
   </div>
 </div>
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Teléfonos de contacto</div>
+  <div class="panel-heading"><h3>Teléfonos de contacto</h3></div>
   <div class="panel-body">
+  	<div *ngFor="let n of numbers">
+		<p>{{n.value.number}}</p>
+	</div>
   </div>
-
-  <!-- List group -->
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let n of numbers" >{{ n }}</li>
-  </ul>
 </div>
