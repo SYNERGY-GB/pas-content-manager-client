@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 //Firebase Import
 // import { AngularFireModule, AuthMethods, AuthProviders } from 'angularfire2';
@@ -51,7 +52,8 @@ type StoreType = {
     ReactiveFormsModule,
     NgaModule.forRoot(),
     PagesModule,
-    routing
+    routing,
+	NgbModule.forRoot()
       ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

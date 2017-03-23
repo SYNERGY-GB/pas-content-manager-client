@@ -14,7 +14,7 @@ export class NewsComponent {
     }
 
     setFirebaseCallbacks(){
-        var moduleRef = this.fs.db.ref('faq');
+        var moduleRef = this.fs.db.ref('news');
 
         moduleRef.on('child_added', (data) => {
             this.ns.push({key: data.key, value: data.val()})

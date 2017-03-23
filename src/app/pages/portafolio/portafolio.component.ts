@@ -14,7 +14,7 @@ export class PortafolioComponent{
     }
 
     setFirebaseCallbacks(){
-        var moduleRef = this.fs.db.ref('faq');
+        var moduleRef = this.fs.db.ref('portafolioPhotos');
 
         moduleRef.on('child_added', (data) => {
             this.photos.push({key: data.key, value: data.val()})
