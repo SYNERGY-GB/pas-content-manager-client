@@ -2,7 +2,7 @@ export var PAGES_MENU = [
   {
     path: 'pages',
     children: [
-      {
+      /*{
         path: 'dashboard',
         data: {
           menu: {
@@ -47,7 +47,7 @@ export var PAGES_MENU = [
             }
           }
         ]
-      },
+      },*/
       //{
       //  path: 'components',
       //  data: {
@@ -70,7 +70,7 @@ export var PAGES_MENU = [
       //    }
       //  ]
       //},
-      {
+      /*{
         path: 'charts',
         data: {
           menu: {
@@ -336,7 +336,7 @@ export var PAGES_MENU = [
             target: '_blank'
           }
         }
-      },
+      },*/
       {
         path: 'home',
         data: {

@@ -1,9 +1,31 @@
-<ngb-carousel>
-	<template ngbSlide *ngFor="let b of banners">
-    <img src="{{'assets/img/client/' + b.value.contentUrl}}" alt="Random first slide">
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </template>
-</ngb-carousel>
+<div class="container">
+	<div class="row">
+	  <ngb-carousel>
+		<template ngbSlide *ngFor="let b of banners; let i = index;">
+		  <img src="{{'assets/img/client/' + b.value.contentUrl}}" alt="Random first slide">
+		  <div class="carousel-caption">
+		    {{ i+1 }}
+		  </div>
+		</template>
+	  </ngb-carousel>
+	</div>
+
+	  <div class="row">
+		<div class="page-header">
+		  <h1>News</h1>
+		</div>
+	  </div>
+
+	  <div class="row">
+		<div class="col-md-4" *ngFor="let p of news">
+		  <img class="img-responsive" src="{{'assets/img/client/' + p.value.contentUrl }}" height="300" width="300">
+	  </div>
+
+
+	  <div class="row">
+		<div class="page-header">
+		  <h1>FAQ</h1>
+		</div>
+	  </div>
+
+</div>
